@@ -1,0 +1,49 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="struts" extends="struts-default">
+        <action name="Login" class="struts.LoginAction">
+            <result name="success">/first.jsp</result>
+            <result name="error">/index.jsp</result>
+            <result name="none">/user.jsp</result>
+        </action>
+        <action name="Scedele" class="struts.ScedeleAction">
+            <result name="success">/first.jsp</result>
+            <result name="error">/first.jsp</result>
+        </action>
+        <action name="Sceadd" class="struts.SceaddAction">
+            <result name="success">/first.jsp</result>
+        </action>
+        <action name="Scechange" class="struts.ScechangeAction">
+            <result name="success">/first.jsp</result>
+        </action>
+        <action name="Bochange" class="struts.BochangeAction">
+            <result name="success">/botany.jsp</result>
+        </action>
+        <action name="Boadd" class="struts.BoaddAction">
+            <result name="success">/botany.jsp</result>
+        </action>
+        <action name="Bodele" class="struts.BodeleAction">
+            <result name="success">/botany.jsp</result>
+        </action>
+        <action name="Ecoschange" class="struts.EcoschangeAction">
+            <result name="success">/ecos.jsp</result>
+        </action>
+        <action name="Ecosadd" class="struts.EcosaddAction">
+            <result name="success">/ecos.jsp</result>
+        </action>
+        <action name="Route" class="struts.Route">
+            <result name="success">/route3.jsp</result>
+        </action>
+        <action name="Routediy" class="struts.Routediy">
+            <result name="success">/route2.jsp</result>
+        </action>
+        <action name="Sceaddpi" class="struts.SceaddpiAction">
+            <result name="success">/first.jsp</result>
+            <result name="error">/index.jsp</result>
+        </action>
+
+    </package>
+</struts>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="BotanyPark@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="BotanyPark">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="academic_conference"/>
+    <schema id="4" parent="1" name="culturalandincreativeindustry"/>
+    <schema id="5" parent="1" name="DatabaseCourse"/>
+    <schema id="6" parent="1" name="date"/>
+    <schema id="7" parent="1" name="education"/>
+    <schema id="8" parent="1" name="EDUCATION_DATA"/>
+    <schema id="9" parent="1" name="Expert_System"/>
+    <schema id="10" parent="1" name="HibernateTest"/>
+    <schema id="11" parent="1" name="information_schema"/>
+    <schema id="12" parent="1" name="luoman"/>
+    <schema id="13" parent="1" name="mysql"/>
+    <schema id="14" parent="1" name="networksecurity"/>
+    <schema id="15" parent="1" name="performance_schema"/>
+    <schema id="16" parent="1" name="springdemo"/>
+    <schema id="17" parent="1" name="springMVC"/>
+    <schema id="18" parent="1" name="sys"/>
+    <table id="19" parent="2" name="botany"/>
+    <table id="20" parent="2" name="distance"/>
+    <table id="21" parent="2" name="ecos"/>
+    <table id="22" parent="2" name="scenery"/>
+    <table id="23" parent="2" name="user"/>
+    <column id="24" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="19" name="sid">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="26" parent="19" name="name">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="27" parent="19" name="context">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="28" parent="19" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="20" name="sid1">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="20" name="sid2">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="20" name="dis">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="32" parent="20" name="PRIMARY">
+      <ColNames>sid1
+sid2</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="21" name="day">
+      <Position>1</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="21" name="temperature">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="35" parent="21" name="humidity">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="36" parent="21" name="pm">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="37" parent="21" name="wind">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="38" parent="21" name="clothes">
+      <Position>6</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="39" parent="21" name="PRIMARY">
+      <ColNames>day</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="22" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="22" name="name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="42" parent="22" name="context">
+      <Position>3</Position>
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <key id="43" parent="22" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="23" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="23" name="password">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="46" parent="23" name="name">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="47" parent="23" name="tap">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="48" parent="23" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

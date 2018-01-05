@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="po.DistanceEntity" table="distance" schema="BotanyPark">
+        <composite-id mapped="true" class="po.DistanceEntityPK">
+            <key-property name="sid1" column="sid1"/>
+            <key-property name="sid2" column="sid2"/>
+        </composite-id>
+        <property name="dis" column="dis"/>
+    </class>
+</hibernate-mapping>

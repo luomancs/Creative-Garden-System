@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="po.EcosEntity" table="ecos" schema="BotanyPark">
+        <id name="day" column="day"/>
+        <property name="temperature" column="temperature"/>
+        <property name="humidity" column="humidity"/>
+        <property name="pm" column="pm"/>
+        <property name="wind" column="wind"/>
+        <property name="clothes" column="clothes"/>
+    </class>
+</hibernate-mapping>
